@@ -25,5 +25,5 @@ jobs:
 
       - name: Push to AtomGit (NEC-Pi5)
         run: |
-          git push "https://Darrenpig:${{ secrets.ATOMGIT_TOKEN }}@atomgit.com/Darrenpig/NEC-Pi5.git" \
+          git push "https://Darrenpig:${{ secrets.ATOMGIT_TOKEN }}@atomgit.com/cnec/NEC-Pi5.git" \
             --all --tags --force 2>&1 | grep -v "remote:" || true
